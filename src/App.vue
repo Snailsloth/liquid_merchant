@@ -120,10 +120,10 @@ export default {
 	},
 	methods: {
 				addArome(){
-					 this.aromes.push({name:'Arome #' + (this.aromes.length + 1),buyValue: 12,buyPrice: 170,mixValue:0,mixPrice:0}); // what to push unto the rows array?
+						this.aromes.push({name:'Arome #' + (this.aromes.length + 1),buyValue: 12,buyPrice: 170,mixValue:0,mixPrice:0});
 				},
 				removeArome(index){
-					 this.aromes.splice(index,1); // why is this removing only the last row?
+						this.aromes.splice(index,1);
 				}
 		}
 }

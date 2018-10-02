@@ -7,11 +7,11 @@
 
 export default {
     name: 'arome',
-    props: ['itemdata', 'row'],
-    template: '#item-template',
+    props: [],
+    template: '',
     data: function () {
         return {
-        selected: this.itemdata[0]
+        
         }
     },
     methods: {
