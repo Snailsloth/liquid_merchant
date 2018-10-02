@@ -33,7 +33,24 @@
 
 			
 
-				<Arome :aromes="aromes"/>
+				<div class="mixbottle">
+					<h3> Основа:</h3>
+					<div class="">
+						<label for="basePgMixValue">PG in liq (%)</label>
+						<input v-model.number="base.pg.mixValue" type="number" name="basePgMixValue" id="basePgMixValue" required>
+					</div>
+					<div class="">
+						<label for="baseVgMixValue">VG in liq (%)</label>
+						<input v-model.number="base.vg.mixValue" type="number" name="baseVgMixValue" id="baseVgMixValue" required>
+					</div>
+					<div class="">
+						<label for="baseNicMixValue">Nic in liq (%)</label>
+						<input v-model.number="base.nic.mixValue" type="number" name="baseNicMixValue" id="baseNicMixValue" required>
+					</div>
+					<Arome :aromes="aromes"/>
+				</div>
+
+				
 
 
 
@@ -60,21 +77,18 @@ export default {
 					buyPrice: 200,
 					mixValue:0,
 					mixPrice:0,
-
 				},
 				vg:{
 					buyValue: 1000,
 					buyPrice: 200,
 					mixValue:0,
 					mixPrice:0,
-
 				},
 				nic:{
 					buyValue: 100,
 					buyPrice: 400,
 					mixValue:0,
 					mixPrice:0,
-
 				}
 			},
 			aromes:[

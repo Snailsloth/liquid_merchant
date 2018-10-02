@@ -1,8 +1,10 @@
 <template>
 
 <div class="aromes">
+     <hr>
+    
     <h3> Ароматизаторы:</h3>
-    <hr>
+   
     <ul>
         <!-- <li v-for="arome in aromes" :key="arome.name"> -->
         <li v-bind:key="arome.name" v-for="(arome,index) in aromes">
@@ -55,10 +57,7 @@ export default {
                     this.aromes.splice(index,1);
             }
         },
-        created:function(){
-
-            console.log(this.aromes);
-        }
+        
 }
 
 </script>
